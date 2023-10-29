@@ -266,6 +266,39 @@ export const projects = [
         link: "https://github.com/endeg-dev/chat_app",
     },
 ];
+export const realProjects = [
+    {
+        name:"Finbit App",
+        cover:"/img/finbit.png",
+        role:"Backend Developer",
+        desc:"Finbit is a mobile application developed by flutter and firebase",
+    },
+    {
+        name:"Ecommerce App",
+        cover:"/img/ecommerce.png",
+        role:"Full Stack Developer",
+        desc:"Ecommerce is a web and mobile application developed by Wechat Framework and Spring Boot Java",
+    },
+    {
+        name:"Ride Plus App",
+        cover:"/img/ride.png",
+        role:"Backend Developer",
+        desc:"Ride Plus is a web and mobile application developed by Golang,react and flutter",
+    },
+    {
+        name:"ET Care App",
+        cover:"/img/et.png",
+        role:"Backend Developer",
+        desc:"ET Care is a mobile application and Web application developed in Golang Backend ,React and Flutter Frontend",
+    },
+    {
+        name:"E-Learning App",
+        cover:"/img/366.png",
+        role:"Backend Developer",
+        desc:"E-Learning is a mobile and web application developed by Nodejs ,Moleculer and Angular.It uses microservice architecture",
+    }
+
+];
 
 export const feedbacks = [
     {
