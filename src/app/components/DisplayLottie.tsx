@@ -1,7 +1,8 @@
 import React from "react";
-import Lottie from "react-lottie";
+import Lottie from 'react-lottie';
 
-const GreetingLottie = ({ animationPath }) => {
+
+const GreetingLottie = ({ animationPath }:any) => {
 	const defaultOptions = {
 		loop: true,
 		autoplay: true,
