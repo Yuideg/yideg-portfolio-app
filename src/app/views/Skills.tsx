@@ -32,7 +32,7 @@ const Skills = () => {
     return (
         <Fade bottom duration={1000} distance="40px">
             <Box className="text-center my-5 section section-lg">
-                <h1 className="h1">{skillsSection.title}</h1>
+                <h1 className="display-3 text-info h1">{skillsSection.title}</h1>
                 <p className="lead">{skillsSection.subTitle}</p>
 
 

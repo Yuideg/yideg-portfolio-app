@@ -3,24 +3,23 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import FeedbackCard from "../components/FeedbackCard";
 import { Fade } from "react-reveal";
+import Typography from "@mui/material/Typography";
 
 const Feedbacks = () => {
 	return (
-		<section className="section section-lg">
+		<section>
 			<Container>
-				<Fade bottom duration={1000} distance="40px">
-					<div className="d-flex p-4">
-						<div>
-							<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
-								<i className="fa fa-star text-info" />
-							</div>
-						</div>
-						<div className="pl-4">
-							<h4 className="display-3 text-info">
-								Our Clients Feedback
-							</h4>
+				<div className="d-flex p-4 ">
+					<div>
+						<div className="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-info">
+							<i className="fa fa-star text-info" />
 						</div>
 					</div>
+					<Typography className="display-3 text-info" variant="h4" textAlign={"left"}>Testimonials</Typography>
+
+				</div>
+				<Fade bottom duration={1000} distance="40px">
+
 					<Row className="row-grid align-items-center">
 						{feedbacks.map((data, i) => {
 							return (

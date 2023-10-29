@@ -46,7 +46,6 @@ const Greetings = () => {
 							</Row>
 						</div>
 					</Container>
-					{/* SVG separator */}
 					<div className="separator separator-bottom separator-skew">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +62,6 @@ const Greetings = () => {
 						</svg>
 					</div>
 				</section>
-				{/* 1st Hero Variation */}
 			</div>
 		</main>
 	);

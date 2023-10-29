@@ -10,7 +10,7 @@ const Proficiency = () => {
 		<Box >
 			<Container className="section section-lg">
 				<Fade bottom duration={1000} distance="40px">
-							<Typography className ="h1" textAlign={"center"}>Proficiency</Typography>
+							<Typography className="display-3 text-info" variant="h4" textAlign={"left"}>Proficiency</Typography>
 							{SkillBars.map((skill) => {
 								return (
 									<div
