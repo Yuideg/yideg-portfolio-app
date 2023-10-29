@@ -15,9 +15,7 @@ const Edution = () => {
 						</div>
 					</div>
 					<div className="pl-4">
-						<div className="pl-4">
 							<h4 className="display-3 text-info">Education</h4>
-						</div>
 					</div>
 				</div>
 				<div className="row-grid align-items-center">
