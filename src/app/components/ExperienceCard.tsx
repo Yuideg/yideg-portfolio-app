@@ -28,13 +28,14 @@ const ExperienceCard = ({ data }) => {
 		<Col lg="4">
 			<Fade left duration={1000} distance="40px">
 				<Card
-					style={{ flex: 1 }}
+					style={{ flex: 1,margin:6,padding:6 }}
 					className="shadow-lg--hover shadow border-0 text-center rounded"
 				>
 					<Color src={data.companylogo} format="hex">
 						{(color) => (
 							<CardHeader style={{ background: "blueviolet" }}>
 								<h5 className="text-white">{data.company}</h5>
+								<h6  className="text-white">{data.country}</h6>
 							</CardHeader>
 						)}
 					</Color>

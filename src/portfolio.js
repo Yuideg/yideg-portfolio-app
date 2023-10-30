@@ -3,7 +3,7 @@ import {deepPurple} from "@mui/material/colors";
 
 export const greetings = {
     name: "Yideg Misganaw",
-    title: "Hi all,",
+    title: "Hi There,I am Yideg,Your Next Full Stack Developer",
     description:
         "As a seasoned full stack developer, I possess a comprehensive skill set encompassing both front-end and back-end technologies. With a strong understanding of various programming languages, frameworks, and databases, I am adept at designing and implementing end-to-end solutions. My expertise in building intuitive user interfaces, optimizing server-side functionality, and ensuring seamless integration enables me to deliver robust and scalable web applications. By staying updated with the latest industry trends, I continuously strive to enhance the overall user experience and drive business success.",
     resumeLink: "#",
@@ -174,6 +174,7 @@ export const experience = [
     {
         role: "Backend web developer",
         company: "2F Capital",
+        country: "Ethiopia",
         job: "Hybrid",
         companylogo: "/img/icons/2f.png",
         date: " July 2021 – July 2022",
@@ -185,6 +186,7 @@ export const experience = [
     {
         role: "Front-End Developer",
         company: "Abush Partners Group",
+        country: "Ethiopia",
         job: "Part-Time",
         companylogo: "/img/icons/common/airbnbLogo.png",
         date: "May 2018 – March 2021",
@@ -196,6 +198,7 @@ export const experience = [
     {
         role: "Full Stack Developer",
         company: "ZehuTech Comapny",
+        country: "Chinna",
         job: "Internship",
         companylogo: "",
         date: "May 2022 – Nov 2022",
@@ -206,7 +209,8 @@ export const experience = [
     },
     {
         role: "Backend Developer",
-        company: "OSI Comapny",
+        company: "Oli System Development",
+        country: "Ethiopia",
         job: "Contract",
         companylogo: "",
         date: "July 2022 – Nov 2022",
@@ -217,7 +221,8 @@ export const experience = [
     },
     {
         role: "Backend Developer",
-        company: "Personnel project",
+        company: "Personnel Project",
+        country: "United Kingdom",
         job: "Contract",
         companylogo: "",
         date: "Nov 2022 – Dec 2022",
@@ -229,6 +234,7 @@ export const experience = [
     {
         role: "Backend Developer",
         company: "L-IFT",
+        country: "Netherland",
         job: "Full-Time",
         companylogo: "/img/icons/lift.png",
         date: "Aug 2022 – Dec 2023",
