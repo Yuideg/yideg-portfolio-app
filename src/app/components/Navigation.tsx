@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import { greetings, socialLinks } from "@/portfolio"
+import {greetings, openSource, socialLinks} from "@/portfolio"
 import Headroom from "headroom.js";
 import Link from "next/link";
 import {
@@ -15,11 +15,16 @@ import {
 	Row,
 	Col,
 } from "reactstrap";
+import {Box} from "@mui/material";
 
 const Navigation = () => {
 	const [collapseClasses, setCollapseClasses] = useState("");
 	const onExiting = () => setCollapseClasses("collapsing-out");
-
+	const [githubProfileData,setGithubProfileData]=React.useState({
+		avatar_url: "https://avatars3.githubusercontent.com/u/59178380?v=4",
+		bio: "A passionate backend web developer.",
+		location: "Ethiopia",
+	})
 	const onExited = () => setCollapseClasses("");
 
 	useEffect(() => {
@@ -27,6 +32,14 @@ const Navigation = () => {
 		// initialise
 		headroom.init();
 	});
+	React.useEffect(()=>{
+		fetch(`https://api.github.com/users/${openSource.githubUserName}`)
+			.then((res) => res.json())
+			.then((data) => {
+				console.log(data);
+				setGithubProfileData(data)
+			})
+	},[])
 
 	return (
 		<>
@@ -84,34 +97,6 @@ const Navigation = () => {
 								<NavItem>
 									<NavLink
 										rel="noopener"
-										aria-label="Facebook"
-										className="nav-link-icon"
-										href={socialLinks.facebook}
-										target="_blank"
-									>
-										<i className="fa fa-facebook-square" />
-										<span className="nav-link-inner--text d-lg-none ml-2">
-											Facebook
-										</span>
-									</NavLink>
-								</NavItem>
-								<NavItem>
-									<NavLink
-										rel="noopener"
-										aria-label="Instagram"
-										className="nav-link-icon"
-										href={socialLinks.instagram}
-										target="_blank"
-									>
-										<i className="fa fa-instagram" />
-										<span className="nav-link-inner--text d-lg-none ml-2">
-											Instagram
-										</span>
-									</NavLink>
-								</NavItem>
-								<NavItem>
-									<NavLink
-										rel="noopener"
 										aria-label="Twitter"
 										className="nav-link-icon"
 										href={socialLinks.twitter}
@@ -151,9 +136,35 @@ const Navigation = () => {
 										</span>
 									</NavLink>
 								</NavItem>
+								<NavItem>
+									<NavLink
+										rel="noopener"
+										aria-label="Instagram"
+										className="nav-link-icon"
+										href={socialLinks.instagram}
+										target="_blank"
+									>
+										<i className="fa fa-instagram" />
+										<span className="nav-link-inner--text d-lg-none ml-2">
+											Instagram
+										</span>
+									</NavLink>
+								</NavItem>
 							</Nav>
 						</UncontrolledCollapse>
 					</Container>
+					<Box className="">
+						<img
+							src={githubProfileData.avatar_url}
+							style={{ width: "100px" }}
+							alt=""
+							className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
+						/>
+						<div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
+							<i className="ni ni-pin-3 text-info mr-2" />
+							{githubProfileData.location}
+						</div>
+					</Box>
 				</Navbar>
 			</header>
 		</>

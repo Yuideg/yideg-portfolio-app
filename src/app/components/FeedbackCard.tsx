@@ -1,23 +1,32 @@
 import React from "react";
-import { Card, CardBody, Badge } from "reactstrap";
+import {Card} from "reactstrap";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import {Box} from "@mui/material";
 
-import { Fade } from "react-reveal";
 
-const FeedbackCard = ({ data }) => {
-	return (
-		<Fade left duration={1000} distance="40px">
-			<Card className="card-lift--hover shadow mt-4">
-				<CardBody>
-					<div className="d-flex px-3">
-						<div className="pl-4">
-							<h5 className="text-info">{data.name}</h5>
-							<p className="description mt-3">{data.feedback}</p>
-						</div>
-					</div>
-				</CardBody>
-			</Card>
-		</Fade>
-	);
+const FeedbackCard = ({data}) => {
+    return (
+        <Card sx={{maxWidth: 345}}>
+            <Box className="">
+                <img
+                    src={data.vatar ? data.avatar_url : "/img/default.jpg"}
+                    style={{width: "200px"}}
+                    alt={data.name}
+                    className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
+                />
+            </Box>
+            <CardContent>
+                <Typography className="text-info" gutterBottom variant="h5" component="div">
+                    {data.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" className="description mt-3">
+                    {data.feedback}
+                </Typography>
+            </CardContent>
+        </Card>
+
+    );
 };
 
 export default FeedbackCard;

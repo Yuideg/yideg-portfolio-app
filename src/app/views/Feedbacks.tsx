@@ -4,9 +4,14 @@ import { Col, Container, Row } from "reactstrap";
 import FeedbackCard from "../components/FeedbackCard";
 import { Fade } from "react-reveal";
 import Typography from "@mui/material/Typography";
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
 
 const Feedbacks = () => {
 	return (
+
+
 		<section>
 			<Container>
 				<div className="d-flex p-4 ">

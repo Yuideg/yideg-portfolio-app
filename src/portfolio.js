@@ -16,7 +16,6 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks = {
-    facebook: "https://www.facebook.com/endegmisganew/",
     instagram: "https://www.instagram.com/endegmisganew/",
     twitter: "https://twitter.com/yuideg",
     github: "https://github.com/Yuideg",
@@ -314,6 +313,16 @@ export const feedbacks = [
     },
     {
         name: "Kirubel A ,Devops",
+        feedback:
+            "The website is very nice, everything was perfectly made as what a software developer should show for job bid need. It sounds good good work.",
+    },
+    {
+        name: "Getachew Tebkew,Angular Developer",
+        feedback:
+            "I have seen this portifolio website! It looks professional and very easy to navigate developers information easily. Our experience with hiring software developer is very difficult  select which developer is best fit for the work that i have but if developers provide such a like brief description and easily accessible developer work and exprience description portifolio, Hiring managers work become very easy.",
+    },
+    {
+        name: "Fasikaw Kindye,Flutter Developer",
         feedback:
             "The website is very nice, everything was perfectly made as what a software developer should show for job bid need. It sounds good good work.",
     },
