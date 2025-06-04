@@ -25,7 +25,7 @@ function getName(s){
 }
 const ExperienceCard = ({ data }) => {
 	return (
-		<Col lg="4">
+		<Col lg="6" >
 			<Fade left duration={1000} distance="40px">
 				<Card
 					style={{ flex: 1,margin:6,padding:6 }}

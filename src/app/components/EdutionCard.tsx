@@ -18,6 +18,7 @@ const EdutionCard = ({ education }) => {
 								{education.duration}
 							</Badge>
 							<p className="description mt-3">{education.desc}</p>
+							<p><strong>Learned and Practiced Skills:</strong></p>
 							<ul>
 								{education.descBullets
 									? education.descBullets.map((desc) => {

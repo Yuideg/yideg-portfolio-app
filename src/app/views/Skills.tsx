@@ -52,7 +52,7 @@ const Skills = () => {
                                         Full Stack Developer
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        full stack developer with 2+ years of experience in web development.
+                                        Full stack developer with <strong>4+</strong> years of experience in web development.
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
