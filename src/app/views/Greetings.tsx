@@ -8,15 +8,15 @@ import SocialLinks from "../components/SocialLinks";
 import {number} from "prop-types";
 
 const Greetings = () => {
-	useEffect(() => {
-		if (typeof document !== 'undefined') {
-			// Safe to use `document`
-			document.documentElement.scrollTop = 0;
-		}
-		if (document.scrollingElement !== null) {
-			document.scrollingElement.scrollTop = 0;
-		}
-	});
+	// useEffect(() => {
+	// 	if (typeof document !== 'undefined') {
+	// 		// Safe to use `document`
+	// 		document.documentElement.scrollTop = 0;
+	// 	}
+	// 	if (document.scrollingElement !== null) {
+	// 		document.scrollingElement.scrollTop = 0;
+	// 	}
+	// });
 	return (
 		<main>
 			<div className="position-relative">
